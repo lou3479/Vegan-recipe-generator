@@ -15,12 +15,13 @@ function generateRecepie(event) {
     let instructionsInput = document.querySelector("#user-instructions");
     let apiKey = "0964dbacb3t4c6f7ef63238e4oee0743";
     let prompt = `Generate a vegan recepie using ${instructionsInput.value}`;
-    let context = "You are a vegan food expert, you love to suggest short and simple recepie. Recipes must not include any animal derived products.Generate using basic HTML. Make sure to follow the user instructions.";
+    let context = "You are a vegan food expert, you love to suggest short and simple recepie. Recipes must not include any animal derived products.Generate using basic html. Make sure to follow the user instructions.";
     let apiUrl =
       `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
 let recipeElement=document.querySelector("#recipe");
 recipeElement.style.display = "block";
+recipeElement.innerHTML = "Generating a recipe....";
 
       console.log("Generating Recipe");
       console.log(`Prompt: ${prompt}`);
