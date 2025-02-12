@@ -20,7 +20,7 @@ function generateRecepie(event) {
       `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
 let recipeElement=document.querySelector("#recipe");
-recipeElement.classList.remove("hiden";)
+recipeElement.style.display = "block";
 
       console.log("Generating Recipe");
       console.log(`Prompt: ${prompt}`);
