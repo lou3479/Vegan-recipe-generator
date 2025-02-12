@@ -15,9 +15,10 @@
     </header>
 
     <main>
+        <div class="form-container">
       <form id="recipe-generator-form">
         <input type="text" 
-        placeholder="Enter ingerdient"
+        placeholder="Enter the ingerdient you would like to use"
         autofocus
         required
         autocomplete="off"
@@ -25,9 +26,11 @@
         id="user-instructions"
         />
         <input type="submit" class="button"/>
-      </form>  
+      </form>
+      <div class="hint">i.e Tofu, Kale, Tumeric, Chickpeas etc. </div>
+        </div> 
 
-      <div class="recipe" id="recipe"></div>
+      <div class="recipe hidden" id="recipe"></div>
 
     </main>
 
